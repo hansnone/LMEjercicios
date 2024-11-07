@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ejercicio Tablas</title>
+    <style>
+      .tabla1 {
+        border-collapse: collapse;
+        width: 300px;
+        height: 100%;
+        text-align: center;
+        background-color: rgb(231, 230, 230);
+      }
+
+      .tabla2 {
+        background-color: rgb(218, 209, 209);
+        width: 400px;
+      }
+
+      .textoizquierda {
+        text-align: left;
+      }
+
+      .cabeza1tabla1 {
+        padding-left: 20px;
+        padding: 0px 10px 20px 10px;
+      }
+
+      .cabeza2tabla1 {
+        padding: 0px 10px 0px 10px;
+      }
+
+      .cabeza1tabla2 {
+        color: white;
+        background-color: grey;
+        padding: 5px;
+        font-size: larger;
+      }
+
+      .cabeza1tabla3 {
+        border-collapse: collapse;
+        width: 760px;
+        background-color: rgb(230, 227, 227);
+      }
+
+      .cabeza1dentrodetabla {
+        background-color: rgb(188, 191, 194);
+        text-align: center;
+      }
+
+      .celda1tabla1 {
+        font-weight: bold;
+        padding: 5px 0px 5px 0px;
+      }
+
+      .padbottabla2 {
+        padding-bottom: 20px;
+      }
+
+      .pad10 {
+        padding: 10px;
+      }
+
+      .pad8 {
+        padding: 8px;
+      }
+
+      .segundocolortabla2 {
+        background-color: rgb(24, 129, 148);
+      }
+
+      .tabla3 {
+        width: 800px;
+        height: 350px;
+        border-collapse: collapse;
+      }
+      table {
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <!-- Primera tabla -->
+  <body>
+    <br /><br /><br />
+    <div>
+      <table border="1" class="tabla1">
+        <caption>
+          <em>Una tabla de muestra con celdas fusionadas</em>
+        </caption>
+        <thead>
+          <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Media</th>
+            <th rowspan="2" class="cabezatabla1">
+              Ojos <br />
+              Rojos
+            </th>
+          </tr>
+          <tr>
+            <th class="cabeza2tabla1">altura</th>
+            <th class="cabeza2tabla1">peso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="celda1tabla1">Machos</td>
+            <td class="textoizquierda">1.9</td>
+            <td class="textoizquierda">0.003</td>
+            <td class="textoizquierda">40%</td>
+          </tr>
+          <tr>
+            <td class="celda1tabla1">Hembras</td>
+            <td class="textoizquierda">1.7</td>
+            <td class="textoizquierda">0.002</td>
+            <td class="textoizquierda">43%</td>
+          </tr>
+        </tbody>
+      </table>
+      <br /><br /><br />
+    </div>
+    <!-- Segunda tabla -->
+    <div>
+      <table border="1" class="tabla2">
+        <thead>
+          <tr>
+            <th colspan="2" class="cabeza1tabla2">Climas de América del sur</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="padbottabla2">
+                      Parte de arriba de América del Sur. Paises como:
+                    </td>
+                    <td>
+                      <table border="1" class="cabeza1dentrodetabla">
+                        <tbody>
+                          <tr>
+                            <td>Venezuela</td>
+                          </tr>
+                          <tr>
+                            <td>Colombia</td>
+                          </tr>
+                          <tr>
+                            <td>Ecuador</td>
+                          </tr>
+                          <tr>
+                            <td>Perú</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td>
+              <table border="0">
+                <tbody>
+                  <tr>
+                    <td class="padbottabla2">
+                      Parte de arriba de América del Sur. Paises como:
+                    </td>
+                    <td>
+                      <table border="1" class="cabeza1dentrodetabla">
+                        <tbody>
+                          <tr>
+                            <td>Argentina</td>
+                          </tr>
+                          <tr>
+                            <td>Chile</td>
+                          </tr>
+                          <tr>
+                            <td>Uruguay</td>
+                          </tr>
+                          <tr>
+                            <td>Paraguay</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+        <tr class="segundocolortabla2">
+          <td class="pad10">
+            Bosque tropical, clima de sabana, clima marítimo con inviernos
+            secos.
+          </td>
+          <td class="pad10">
+            Clíma marítimos con veranos secos, con inviernos secos, climas fríos
+            clima de estepa, clima desértico
+          </td>
+        </tr>
+      </table>
+      <br /><br /><br />
+    </div>
+    <!-- Tercera tabla -->
+    <div>
+      <table border="1" class="cabeza1tabla3">
+        <thead style="text-align: center">
+          <tr>
+            <th colspan="5" class="pad8">
+              Curso de la Comunidad -- Bath Otoño 1997
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th style="width: 180px; padding: 8px">Nombre del curso</th>
+            <th style="width: 120px">Tutor del curso</th>
+            <th style="padding: 8px">Resumen</th>
+            <th style="padding: 8px">Código</th>
+            <th style="padding: 10px">Tasas</th>
+          </tr>
+          <tr>
+            <td style="padding-left: 5px">Tras la Guerra Civil</td>
+            <td style="padding-left: 5px">Dr. John Wroughton</td>
+            <td
+              style="padding-bottom: 10px; padding-left: 5px; padding-top: 5px"
+            >
+              En el curso examinará los años turbulentos que siguieron a 1646 en
+              Inglaterra.
+              <em>Reuniones cada 6 semanas a partir del lunes 13 de octubre</em>
+            </td>
+            <td style="padding-left: 5px">H27</td>
+            <td style="padding-left: 5px">€32</td>
+          </tr>
+          <tr>
+            <td style="padding-left: 5px">
+              Una introducción a la Inglaterra anglosajona
+            </td>
+            <td style="padding-left: 5px">Mark Cottle</td>
+            <td
+              style="padding-bottom: 10px; padding-left: 5px; padding-top: 5px"
+            >
+              Este curso de un dia presenta una<br />reconstrucción de los
+              anglosajones y de su sociedad en el período medieval temprano.
+              <em>Sábado 18 de octubre.</em>
+            </td>
+            <td style="padding-left: 5px">H28</td>
+            <td style="padding-left: 5px">€18</td>
+          </tr>
+          <tr>
+            <td style="padding-left: 5px">La gloriosa Grecia</td>
+            <td style="padding-left: 5px">Valerie Lorenz</td>
+            <td
+              style="padding-bottom: 10px; padding-left: 5px; padding-top: 5px"
+            >
+              Lugar de nacimiento de la democracia y la filosofía, patria del
+              trato, hogar de la <br />
+              discusión. Los romanos pueden haberlo hecho, pero los griegos lo
+              hicieron primero.
+              <em>Clases matutinas del sábado 25 de octubre de 1997</em>
+            </td>
+            <td style="padding-left: 5px">H30</td>
+            <td style="padding-left: 5px">€18</td>
+          </tr>
+        </tbody>
+      </table>
+      <br /><br /><br />
+    </div>
+    <!-- cuarta tabla -->
+    <div>
+      <table rules="NONE" border="0" class="tabla3">
+        <tr>
+          <td colspan="2" style="background-color: green"></td>
+          <td style="background-color: yellow"></td>
+          <td rowspan="2" style="background-color: grey"></td>
+        </tr>
+        <tr>
+          <td style="background-color: yellow"></td>
+          <td style="background-color: blue" colspan="2"></td>
+        </tr>
+        <tr>
+          <td rowspan="3" style="background-color: orange"></td>
+          <td rowspan="3" style="background-color: grey"></td>
+          <td colspan="2" style="background-color: yellow"></td>
+        </tr>
+        <tr>
+          <td style="background-color: grey"></td>
+          <td rowspan="3" style="background-color: purple"></td>
+        </tr>
+        <tr>
+          <td style="background-color: yellow"></td>
+        </tr>
+        <tr>
+          <td style="background-color: yellow"></td>
+          <td colspan="2" style="background-color: red"></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="background-color: yellow"></td>
+          <td style="background-color: red"></td>
+          <td style="background-color: yellow"></td>
+        </tr>
+      </table>
+      <br /><br /><br />
+    </div>
+    <!-- quinta tabla -->
+    <div>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>HORAS</th>
+            <th>LUNES</th>
+            <th>MARTES</th>
+            <th>MIÉRCOLES</th>
+            <th>JUEVES</th>
+            <th>VIERNES</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>15:00 – 16:00</td>
+            <td rowspan="3">PLANIFICACIÓN DE REDES<br />JUAN CEBRIÁN</td>
+            <td rowspan="3">IMPL SIST. OP.<br />GUILLERMO BELLETTINI</td>
+            <td rowspan="3">PLANIFICACIÓN DE REDES<br />JUAN CEBRIÁN</td>
+            <td rowspan="3">HARDWARE<br />JUAN RAMÓN ESTEBAN</td>
+            <td rowspan="3">LENG MARCAS<br />PABLO MORATO</td>
+          </tr>
+          <tr>
+            <td>16:00 – 17:00</td>
+          </tr>
+          <tr>
+            <td>17:00 – 18:00</td>
+          </tr>
+          <tr>
+            <td>18:00 – 19:00</td>
+            <td>GESTION DE BBDD<br />MARÍA JESÚS GONZÁLEZ</td>
+            <td>ANTROPOLOGÍA<br />ANTONIO VÁZQUEZ</td>
+            <td>IPE<br />FERNANDO MARÍN</td>
+            <td rowspan="3">IMPL SIST. OP.<br />GUILLERMO BELLETTINI</td>
+            <td>GESTION DE BBDD<br />MARÍA JESÚS GONZÁLEZ</td>
+          </tr>
+          <tr>
+            <td>19:00 - 20:00</td>
+            <td rowspan="2">GESTION DE BBDD<br />MARÍA JESÚS GONZÁLEZ</td>
+            <td>GESTION DE BBDD<br />MARÍA JESÚS GONZÁLEZ</td>
+            <td rowspan="2">IPE<br />FERNANDO MARÍN</td>
+            <td rowspan="2">MÓDULO OPTATIVO<br />VÍCTOR RODRÍGUEZ</td>
+          </tr>
+          <tr>
+            <td>20:00 – 20:45</td>
+            <td>GESTION DE BBDD<br />MARÍA JESÚS GONZÁLEZ</td>
+          </tr>
+        </tbody>
+      </table>
+      <br /><br /><br />
+    </div>
+  </body>
+</html>
